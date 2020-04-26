@@ -1,0 +1,23 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Make and Eat Burger",
+  "main": "index.js",
+  "scripts": {
+    "test": "sak"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Burger"
+  },
+  "keywords": [
+    "Burger",
+    "handlebars"
+  ],
+  "author": "Suzann Kowalski",
+  "license": "ISC",
+  "dependencies": {
+    "express-handlebars": "^4.0.3",
+    "mysql": "^2.18.1"
+  }
+}

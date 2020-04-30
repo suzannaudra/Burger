@@ -1,0 +1,24 @@
+body {
+  background-image: url('../img/cartoon.jpg');
+  background-repeat: repeat;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+  color: slateblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:slateblue;
+  border-style: double;
+  border-width: 5px;
+  background-origin: content-box;
+}
+button {
+  font-size: 30px;
+}

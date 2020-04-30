@@ -11,10 +11,9 @@
             <p>{{this.id}}. {{this.burger}}</p>
           </div>
           <div class="col-xs-3 text-center">
-            <form method="POST" actions="/burgers/update?_method=PUT" class="button-size">
-          <input type="hidden" name="burger" type="text"
+            <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
+          <input type="hidden" name="burger_id" type="text"
           value={{this.id}}>
-          <br>
           <button type="submit" class="btn btn-default">Eat The Burger</button>
           </form>
           </div>
@@ -25,20 +24,24 @@
       <div clas"col-xs-6 text-center" class="task">
         {{#each burger_data}}
         {{#if this.devoured}}
-          <input class="form control" type="text" placeholders=
-          "{{this.id}}. {{this.burger_name}}" readonly>
+          <p>{{this.id}} {{this.burger}} </p>
         {{/if}}
         {{/each}}
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 <div class="container">
   <div class="row">
     <div class="col-xs-12 text-center enter_section">
-      <form action="/burgers/create" method="POST">
-      <input type="text" name="burger_name" class="form-control"
+      <form action="/api/new-burger" method="POST">
+      <input type="text" name="name" class="form-control"
       value="" id="enter_text">
-      <button type="submit" class="btn btn-primary" id="text-enter-button"Submit!></button>
+      <button type="submit" class="btn btn-primary" id="text-enter-button">Submit!</button>
       </form>
       <p>Enter in the burger you want to eat.</p>
     </div>

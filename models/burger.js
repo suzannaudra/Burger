@@ -11,8 +11,8 @@ update: function(id,cb){
   orm.update('burgers',id,cb);
 }
 ,
-create: function(name,cb){
-  orm.create('burgers',name,cb);
+create: function(val,cb){
+  orm.create('burgers',val,cb);
 }
 }
 

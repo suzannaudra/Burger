@@ -10,7 +10,7 @@ connection = mysql.createConnection({
 });
 }
 else {
-  connection.mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 }
 
 connection.connect(function(err){
